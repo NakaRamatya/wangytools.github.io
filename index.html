@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Wangy Wangy Tools (?)</title>
+</head>
+
+<body onload="main()">
+    <script src="./script.js"></script>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand m-3 title" href="#">Wangy Wangy</a>
+        <ul class="nav">
+            <!-- <li class="nav-item">
+                <button type="button" class="btn btn-light m-2">Light</button>
+            </li> -->
+        </ul>
+    </nav>
+    <!-- Navbar end -->
+    <!-- Content -->
+
+    <div class="container ">
+        <div class="left card">
+            <div class="card text-center">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" class="buttonClicked" onclick="activeTab(0)" href="#"
+                                id="bone">Template One</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="activeTab(1)" href="#" id="btwo">Template Two</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="activeTab(2)" href="#" id="bthree">Template Three</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="activeTab(3)" href="#" id="bfour">Template Four</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body form-one" style="display:block;" id="template-one">
+                    <div class="mb-2">
+                        <input type="text" onkeyup="changeText(0)" id="name-one" placeholder="Name" class="form-control"
+                            aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="mb-2">
+                        <input type="text" onkeyup="changeText(0)" id="money-one" placeholder="100" class="form-control"
+                            aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="mt-2">
+                        <textarea class="form-control" style="resize: none;" id="textarea-one" rows="20"
+                            onkeyup="changeText(0)">
+                        </textarea>
+                    </div>
+                </div>
+                <div class="card-body form-two" style="display: none;" id="template-two">
+                    <div class="mb-2">
+                        <input type="text" onkeyup="changeText(1)" id="name-two" placeholder="Name" class="form-control"
+                            aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="mb-2">
+                        <input type="text" onkeyup="changeText(1)" id="money-two" placeholder="100" class="form-control"
+                            aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="mt-2">
+                        <textarea class="form-control" onkeyup="changeText(1)" style="resize: none;" id="textarea-two"
+                            rows="20"></textarea>
+                    </div>
+                </div>
+                <div class="card-body form-three" style="display: none;" id="template-three">
+                    <div class="mb-2">
+                        <input type="text" onkeyup="changeText(2)" id="name-three" placeholder="Name" class="form-control"
+                            aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="mb-2">
+                        <input type="text" onkeyup="changeText(2)" id="money-three" placeholder="100"
+                            class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="mt-2">
+                        <textarea class="form-control" onkeyup="changeText(2)" style="resize: none;" id="textarea-three"
+                            rows="20"></textarea>
+                    </div>
+                </div>
+                <div class="card-body form-four" style="display: none;" id="template-four">
+                    <div class="mb-2">
+                        <input type="text" onkeyup="changeText(3)" id="name-four" placeholder="Name" class="form-control"
+                            aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="mb-2">
+                        <input type="text" onkeyup="changeText(3)" id="money-four" placeholder="100"
+                            class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="mt-2">
+                        <textarea class="form-control" onkeyup="changeText(3)" style="resize: none;" id="textarea-four"
+                            rows="20"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right w3-animate-right" style="display: flex;">
+            <div class="wangy wangy-text-one" id="wangy-place-one">
+                <img class="talenta"
+                    src="https://cdn.discordapp.com/attachments/799272728615452746/801854655323701328/nana_full.png"
+                    alt="" srcset="">
+                <div class="wangy-text" id="place-wangy-one">
+                    NANA NANA NANAAAAA.... NANAAAAA
+                    AAAAAAAAAAGH AAAAAAAAAAAAAAGH heartheartheartheart WANGY WANGY WANGY WANGY HU HA HU HA HU HA, aaaah
+                    baunya NANA wangi aku mau nyiumin aroma badan nya AAAAAAAAH ~~ Rambutnya.... aaah Rambutnya
+                    juga pengen aku acak-acak ~ AAAAAH NANA keluar pertama kali juga manis heartheartheart AAAAAAAAH
+                    NANA LUCCUUUUUUUUUUUUUUU............ GUA BAKAL BAKAR DUIT 100 JUTA RUPIAH BUAT NANA
+                    AAAAAAAAAAAAAGH
+                    apa ? NANA itu gak nyata ? Cuma karakter 2 dimensi katamu ? nggak, ngak ngak ngak ngak NGAAAAAAAAK
+                    GUA GAK PERCAYA ITU DIA NYATA NGAAAAAAAAAAAAAAAAAK !! GUA GAK PEDULI SAMA KENYATAAN POKOKNYA GAK
+                    PEDULI.
+                    Iro ngeliat gw ... Iro di laptop ngeliatin gw Iro... kamu percaya sama aku ? aaaaaaaaaaah syukur Iro
+                    gak malu merelakan aku aaaaaah heartheartheart YEAAAAAAAAAAAH GUA MASIH PUNYA NANA. SENDIRI PUN
+                    NGGAK SAMA AAAAAAAAAAAAAA
+                </div>
+            </div>
+            <div class="wangy wangy-text-two" style="display: none;" id="wangy-place-two">
+                <img class="talenta"
+                    src="https://cdn.discordapp.com/attachments/799272728615452746/801854887335690261/dedy_full.png"
+                    alt="" srcset="">
+                <div class="wangy-text" id="place-wangy-two">
+                    Dedy Dedy Dedy... Dedy AAAAAAAAAAGH AAAAAAAAAAAAAAGH heartheartheartheart WANGY WANGY WANGY WANGY HU
+                    HA HU HA HU HA, aaaah baunya Dedy wangi aku mau nyiumin aroma badan nya AAAAAAAAH ~~ Rambutnya....
+                    aaah Rambutnya juga pengen aku acak-acak ~ AAAAAH Dedy keluar pertama kali juga manis
+                    heartheartheart AAAAAAAAH Dedy LUCCUUUUUUUUUUUUUUU............ GUA BAKAL BAKAR DUIT JUTA RUPIAH BUAT
+                    NANA AAAAAAAAAAAAAGH apa ? Dedy itu gak nyata ? Cuma karakter 2 dimensi katamu ? nggak, ngak ngak
+                    ngak ngak NGAAAAAAAAK GUA GAK PERCAYA ITU DIA NYATA NGAAAAAAAAAAAAAAAAAK !! GUA GAK PEDULI SAMA
+                    KENYATAAN POKOKNYA GAK PEDULI. Dedy ngeliat gw ... Dedy di laptop ngeliatin gw Dedy ... kamu percaya
+                    sama aku ? aaaaaaaaaaah syukur Dedy gak malu merelakan aku aaaaaah heartheartheart YEAAAAAAAAAAAH
+                    GUA MASIH PUNYA Dedy. SENDIRI PUN NGGAK SAMA AAAAAAAAAAAAAA
+                </div>
+            </div>
+            <div class="wangy wangy-text-three" style="display: none;" id="wangy-place-three">
+                <img class="talenta"
+                    src="https://cdn.discordapp.com/attachments/799272728615452746/802198904338645012/Felin_Fulbod.png"
+                    alt="" srcset="">
+                <div class="wangy-text" id="place-wangy-three">
+                    Felin Felin Felin... Felin AAAAAAAAAAGH AAAAAAAAAAAAAAGH heartheartheartheart WANGY WANGY WANGY
+                    WANGY HU HA HU HA HU HA, aaaah baunya Felin wangi aku mau nyiumin aroma badan nya AAAAAAAAH ~~
+                    Rambutnya.... aaah Rambutnya juga pengen aku acak-acak ~ AAAAAH Felin keluar pertama kali juga manis
+                    heartheartheart AAAAAAAAH Felin LUCCUUUUUUUUUUUUUUU............ GUA BAKAL BAKAR DUIT JUTA RUPIAH
+                    BUAT NANA AAAAAAAAAAAAAGH apa ? Felin itu gak nyata ? Cuma karakter 2 dimensi katamu ? nggak, ngak
+                    ngak ngak ngak NGAAAAAAAAK GUA GAK PERCAYA ITU DIA NYATA NGAAAAAAAAAAAAAAAAAK !! GUA GAK PEDULI SAMA
+                    KENYATAAN POKOKNYA GAK PEDULI. Felin ngeliat gw ... Felin di laptop ngeliatin gw Felin ... kamu
+                    percaya sama aku ? aaaaaaaaaaah syukur Felin gak malu merelakan aku aaaaaah heartheartheart
+                    YEAAAAAAAAAAAH GUA MASIH PUNYA Felin. SENDIRI PUN NGGAK SAMA AAAAAAAAAAAAAA
+                </div>
+            </div>
+            <div class="wangy wangy-text-four" style="display: none;" id="wangy-place-four">
+                <img class="talenta"
+                    src="https://cdn.discordapp.com/attachments/785099913003663380/802195367302397962/Naka-FullBody.png"
+                    alt="" srcset="">
+                <div class="wangy-text" id="place-wangy-four">
+                    Naka Naka Naka... Naka AAAAAAAAAAGH AAAAAAAAAAAAAAGH heartheartheartheart WANGY WANGY WANGY WANGY HU
+                    HA HU HA HU HA, aaaah baunya Naka wangi aku mau nyiumin aroma badan nya AAAAAAAAH ~~ Rambutnya....
+                    aaah Rambutnya juga pengen aku acak-acak ~ AAAAAH Naka keluar pertama kali juga manis
+                    heartheartheart AAAAAAAAH Naka LUCCUUUUUUUUUUUUUUU............ GUA BAKAL BAKAR DUIT JUTA RUPIAH BUAT
+                    NANA AAAAAAAAAAAAAGH apa ? Naka itu gak nyata ? Cuma karakter 2 dimensi katamu ? nggak, ngak ngak
+                    ngak ngak NGAAAAAAAAK GUA GAK PERCAYA ITU DIA NYATA NGAAAAAAAAAAAAAAAAAK !! GUA GAK PEDULI SAMA
+                    KENYATAAN POKOKNYA GAK PEDULI. Naka ngeliat gw ... Naka di laptop ngeliatin gw Naka ... kamu percaya
+                    sama aku ? aaaaaaaaaaah syukur Naka gak malu merelakan aku aaaaaah heartheartheart YEAAAAAAAAAAAH
+                    GUA MASIH PUNYA Naka. SENDIRI PUN NGGAK SAMA AAAAAAAAAAAAAA
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
